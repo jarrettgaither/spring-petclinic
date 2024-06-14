@@ -27,4 +27,9 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Build with Maven Wrapper
-        run: ./mvnw -B package
+        run: |
+          ./mvnw -B package
+          ./mvnw -e -X --settings .github/settings.xml
+        env:
+          NEXUS_USERNAME: ${{secrets.NEXUS_USERNAME}}
+          NEXUS_PASSWORD: ${{secrets.NEXUS_PASSWORD}}
