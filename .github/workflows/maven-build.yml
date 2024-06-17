@@ -34,5 +34,5 @@ jobs:
           ./mvnw -B package
           mvn deploy
         env:
-          MAVEN_USERNAME: ${{secrets.NEXUS_USERNAME}}
+          MAVEN_USERNAME: "admin"
           MAVEN_PASSWORD: ${{secrets.NEXUS_PASSWORD}}
