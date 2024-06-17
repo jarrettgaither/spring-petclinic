@@ -30,7 +30,7 @@ jobs:
       - name: Build with Maven Wrapper
         run: |
           ./mvnw -B package
-          mvn deploy -e -X --settings .github/workflows/settings.xml
+          ./mvnw deploy -e -X --settings .github/workflows/settings.xml
         env:
           MAVEN_USERNAME: "admin"
           MAVEN_PASSWORD: ${{secrets.NEXUS_PASSWORD}}
