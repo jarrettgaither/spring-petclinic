@@ -15,7 +15,7 @@
     <snapshotRepository>
       <id>maven-snapshots</id>
       <name>Nexus Repo</name>
-      <url>${REPO_URL}/repository/maven-snapshots/</url>
+      <url>http://192.168.224.129:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
   
