@@ -27,3 +27,9 @@ jobs:
           cache: maven
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
+
+      - name: Deploy to Nexus
+        run: ./mvnw deploy
+        env:
+          MAVEN_USERNAME: "admin"
+          MAVEN_PASSWORD: "booya"
