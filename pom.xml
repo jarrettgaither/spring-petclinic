@@ -5,6 +5,17 @@
   <artifactId>spring-petclinic</artifactId>
   <version>3.1.0-SNAPSHOT</version>
 
+  <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <url>https://55dc-107-213-49-65.ngrok-free.app/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>https://55dc-107-213-49-65.ngrok-free.app/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
+
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
